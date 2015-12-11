@@ -22,7 +22,9 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="css/sss.css">
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+
+<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css"/>
   
 
  <style>
@@ -57,32 +59,45 @@
           </h4>
 
        </div>
+ 
     </div>
     
     <div class="nine columns">
       <br />
       
-      <div class="slider">
-        
-        <div><style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/147490314' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div> <br /><p><a href="https://vimeo.com/147490314">Fayoum Portrait</a>, 2015 - video by <a href="https://vimeo.com/kafkube">Kareem Osman</a></p></div>
-        <div><img src="images/bara/behdeti.jpg" />Behdeti, Al Fayoum, Egypt 2015</div>
-        <div><img src="images/bara/maznoo2.jpg" />Tahrir, 2014</div>
-        <div><img src="images/bara/sa7liya.jpg" /> Cairo with Ammar abu Bakr, 2013</div>
-        <div><img src="images/bara/quanto.jpg" />Italy with Aya Tarek, 2013</div>
-        <div><img src="images/bara/wara2.jpg" />2012</div>
-        <div><img src="images/bara/zat.jpg" />2012</div>
-        <div><img src="images/bara/supergirl.jpg" />2012</div>
-        <div><img src="images/bara/milad.jpg" />Horreya Bar, 2012</div>
-        <div><img src="images/bara/laho.jpg" />2012</div>
-        <div><img src="images/bara/bashar.jpg" />2011</div> 
-        <div><img src="images/bara/checkmate.jpg" />2011</div>  
-        <div><img src="images/bara/mubarak.jpg" />Tahrir, 2011</div>      
+      <<div id ="slider" data-slick=
+                       '{"slidesToShow": 1,
+                        "slidesToScroll": 4,
+                        "autoplay": true,
+                        "autoplaySpeed": 500,
+                        "dots": false, "infinite": true,  "speed": 300}'>
+
+        <div><img src="images/gowa/kiss.png" />Kiss, Dismaland, 2015</div>
+        <div><img src="images/gowa/mon3em.png" />2012</div>
+        <div><img src="images/gowa/muslimrage.jpg" />Contemporary Wing, 2012</div>
+        <div><img src="images/gowa/tanktv.jpg" />Contemporary Wing, 2012</div>
+        <div><img src="images/gowa/zaki.jpg" />Arthropologie, 2012</div>
+        <div><img src="images/gowa/nabolsi.jpg" />Arthropologie, 2012</div>
+        <div><img src="images/gowa/mrX.jpg" />Arthropologie, 2012</div>
+        <div><img src="images/gowa/zebra.jpg" />Townhouse, 2011</div>
+        <div><img src="images/gowa/maspero.jpg" /> 2011</div>
+
+
+
+        <div><img src="images/gowa/egg.png" />2013</div>
+        <div><img src="images/gowa/angry.png" />2013</div>
+        <div><img src="images/gowa/za3eem.png" />2013</div>
+        <div><img src="images/gowa/nasser.png" />2013</div>   
    
       </div>
+      
       <br class="hide-for-large" />
+
     </div>
  </div>
 </div>
+
+
 
 <div class="container" style=" position: relative; bottom: 5px;"> 
     <div class="hide-for-large"> 
@@ -106,21 +121,16 @@
 
 
 
+
 <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="js/sss.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
 <script>
 
+$('#slider').slick();
 
-$('.slider').sss({
-slideShow : false, // Set to false to prevent SSS from automatically animating.
-startOn : 0, // Slide to display first. Uses array notation (0 = first slide).
-transition : 200, // Length (in milliseconds) of the fade transition.
-speed : 5000, // Slideshow speed in milliseconds.
-showNav : true // Set to false to hide navigation arrows.
-});
 
 </script>
 
